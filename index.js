@@ -22,3 +22,14 @@ function openmenu(){
 function closemenu(){
     document.getElementById('sidemenu').style.right = "-150px";
 }
+
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbx-o9oxptcdEcaauth-AJ53RU6AkX_ExAW_7VYikzQvvQDD5uz6vq8xLHS-fzDxsiRk/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
