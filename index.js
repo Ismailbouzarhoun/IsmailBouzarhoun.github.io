@@ -24,7 +24,7 @@ function closemenu(){
 }
 
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbx-o9oxptcdEcaauth-AJ53RU6AkX_ExAW_7VYikzQvvQDD5uz6vq8xLHS-fzDxsiRk/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzbNcI-VbDNpneSP0c7bbqNL-Gyp6yw5V-BQKlA5NjnIwRFDHFmRrok_4KuA1VLEI9A/exec';
 const form = document.forms['submit-to-google-sheet']
 
 form.addEventListener('submit', e => {
