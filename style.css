@@ -449,6 +449,10 @@ nav .fas{
     .copyright {
         font-size: 14px;
     }
+
+    nav ul li a {
+        color: #ffffff;
+    }
 }
 
 #msg {
